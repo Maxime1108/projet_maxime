@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5f7;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #ffc9da;
+  position: relative;
+}
+
+header h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+  color: #e60000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #6a1e77;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.manga-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.manga-card {
+  background: white;
+  border: 2px solid #f8d7e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.manga-card:hover {
+  transform: translateY(-5px);
+}
+
+.manga-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.manga-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.manga-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.top-sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: gold;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-bottom-right-radius: 8px;
+}
+
+.coming-soon p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+  background-color: #f3b53f;
+  color: #fff;
+}
+
+.add-to-cart:hover {
+  background-color: #e0a020;
+}
+
+.view-article {
+  background-color: #5cd1e6;
+  color: #fff;
+}
+
+.view-article:hover {
+  background-color: #46b8cf;
+}
