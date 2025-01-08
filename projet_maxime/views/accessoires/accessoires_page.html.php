@@ -18,7 +18,7 @@ $currentPage = 1;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="css/style-accessoires.css">
+    <link rel="stylesheet" href="public/assets/css/style-accessoires.css">
 </head>
 
 <body>

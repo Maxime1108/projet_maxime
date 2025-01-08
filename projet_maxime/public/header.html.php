@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,4 +19,4 @@
             <a href="#">À propos</a>
             <a href="<?= addLink('contact', 'index') ?>">Contact</a>
         </nav>
-    </header>
+    </header> -->

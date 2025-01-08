@@ -17,7 +17,7 @@ $mangas = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="css/style-mangas.css">
+    <link rel="stylesheet" href="public/assets/css/style-mangas.css">
 </head>
 
 <body>
