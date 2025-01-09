@@ -1,12 +1,12 @@
 <?php
 $pageTitle = "Jeux Vidéo - Matsuri";
 $games = [
-    ["public/assets/img/mariokart8.jpg", "Mario Kart 8 Deluxe", "49,99€"],
-    ["img/ff7remake.jpg", "Final Fantasy VII Remake", "79,99€"],
-    ["img/zelda.jpg", "The Legend of Zelda: Breath of the Wild", "49,99€"],
-    ["img/DeathStrandingDirectorsCut.jpg", "Death Stranding Director's Cut", "39,99€"],
-    ["img/darksouls3.jpg", "Dark Souls III", "59,99€"],
-    ["img/re2.jpg", "Resident Evil 2", "39,99€"],
+    ["../../public/assets/img/mariokart8.jpg", "Mario Kart 8 Deluxe", "49,99€"],
+    ["../../public/assets/img/ff7remake.jpg", "Final Fantasy VII Remake", "79,99€"],
+    ["../../public/assets/img/zelda.jpg", "The Legend of Zelda: Breath of the Wild", "49,99€"],
+    ["../../public/assets/img/DeathStrandingDirectorsCut.jpg", "Death Stranding Director's Cut", "39,99€"],
+    ["../../public/assets/img/darksouls3.jpg", "Dark Souls III", "59,99€"],
+    ["../../public/assets/img/re2.jpg", "Resident Evil 2", "39,99€"],
 ];
 $currentPage = 1;
 ?>
@@ -18,7 +18,7 @@ $currentPage = 1;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="public/assets/css/style-jeux.css">
+    <link rel="stylesheet" href="../../public/assets/css/style-jeux.css">
 </head>
 
 <body>
@@ -49,7 +49,7 @@ $currentPage = 1;
         <button onclick="location.href='jeux_video_page2.html.php'">2</button>
     </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>
 
 </body>
 

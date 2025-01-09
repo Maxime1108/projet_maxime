@@ -1,12 +1,12 @@
 <?php
 $pageTitle = "Mangas - Matsuri";
 $mangas = [
-    ["img/demonslayer.jpg", "Demon Slayer - Intégrale", "167,67€", "#1 DES VENTES"],
-    ["img/yourname.jpg", "Your Name - Intégrale", "21,95€"],
-    ["img/yourlieinapril.jpg", "Your Lie in April - Intégrale", "65,00€"],
-    ["img/dandadan.jpg", "DanDaDan - Intégrale", "96,96€"],
-    ["img/asilentvoice.jpg", "A Silent Voice - Intégrale", "46,20€"],
-    ["img/horimiya.jpg", "Horimiya - Intégrale", "70,00€"],
+    ["../../public/assets/img/demonslayer.jpg", "Demon Slayer - Intégrale", "167,67€", "#1 DES VENTES"],
+    ["../../public/assets/img/yourname.jpg", "Your Name - Intégrale", "21,95€"],
+    ["../../public/assets/img/yourlieinapril.jpg", "Your Lie in April - Intégrale", "65,00€"],
+    ["../../public/assets/img/dandadan.jpg", "DanDaDan - Intégrale", "96,96€"],
+    ["../../public/assets/img/asilentvoice.jpg", "A Silent Voice - Intégrale", "46,20€"],
+    ["../../public/assets/img/horimiya.jpg", "Horimiya - Intégrale", "70,00€"],
 ];
 ?>
 
@@ -17,7 +17,7 @@ $mangas = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="public/assets/css/style-mangas.css">
+    <link rel="stylesheet" href="../../public/assets/css/style-mangas.css">
 </head>
 
 <body>

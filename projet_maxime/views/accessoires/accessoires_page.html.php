@@ -1,12 +1,12 @@
 <?php
 $pageTitle = "Accessoires - Matsuri";
 $accessoires = [
-    ["img/porte-cle-torii.jpg", "Porte clé - Torii", "6,99€"],
-    ["img/maneki-neko.jpg", "Maneki neko", "7,99€"],
-    ["img/hachimaki.jpg", "Hachimaki", "4,99€"],
-    ["img/eventail-sakura.jpg", "Éventail - fleur de Sakura", "18,90€"],
-    ["img/masque-oni.jpg", "Masque Oni", "75,00€"],
-    ["img/ombrelle-sakura.jpg", "Ombrelle - fleur de Sakura", "29,90€"]
+    ["../../public/assets/img/porte-cle-torii.jpg", "Porte clé - Torii", "6,99€"],
+    ["../../public/assets/img/maneki-neko.jpg", "Maneki neko", "7,99€"],
+    ["../../public/assets/img/hachimaki.jpg", "Hachimaki", "4,99€"],
+    ["../../public/assets/img/eventail-sakura.jpg", "Éventail - fleur de Sakura", "18,90€"],
+    ["../../public/assets/img/masque-oni.jpg", "Masque Oni", "75,00€"],
+    ["../../public/assets/img/ombrelle-sakura.jpg", "Ombrelle - fleur de Sakura", "29,90€"]
 ];
 $currentPage = 1;
 ?>
@@ -18,7 +18,7 @@ $currentPage = 1;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="public/assets/css/style-accessoires.css">
+    <link rel="stylesheet" href="../../public/assets/css/style-accessoires.css">
 </head>
 
 <body>
@@ -44,7 +44,7 @@ $currentPage = 1;
         <?php endforeach; ?>
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../../includes/footer.php'; ?>
 </body>
 
 </html>
