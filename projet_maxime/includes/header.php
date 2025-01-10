@@ -11,6 +11,6 @@
         <h1>Matsuri</h1>
         <nav>
             <a href="views/a_propos/a_propos.html.php">À propos</a>
-            <a href="#">Contact</a>
+            <a href="views/contact/contact.html.php">Contact</a>
         </nav>
     </header>

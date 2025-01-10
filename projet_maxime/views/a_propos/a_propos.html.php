@@ -18,7 +18,7 @@ $pageTitle = "À Propos - Matsuri";
             <h2>Bienvenue sur Matsuri</h2>
             <p>
                 Matsuri est une plateforme dédiée aux passionnés de culture japonaise. Notre mission est de vous offrir une expérience unique en vous proposant une sélection
-                variée de produits authentiques, allant des accessoires traditionnels aux derniers jeux vidéo et mangas populaires.
+                variée de produits authentiques, allant des accessoires traditionnels aux jeux vidéos et mangas populaires.
             </p>
         </section>
 
