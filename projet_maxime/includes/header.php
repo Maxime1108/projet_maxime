@@ -12,5 +12,8 @@
         <nav>
             <a href="views/a_propos/a_propos.html.php">À propos</a>
             <a href="views/contact/contact.html.php">Contact</a>
+                    <a href="views/inscription/inscription.html.php" class="avatar-link">
+            <img src="public/assets/img/avatar.png" alt="Avatar" class="avatar-icon">
+        </a>
         </nav>
     </header>
