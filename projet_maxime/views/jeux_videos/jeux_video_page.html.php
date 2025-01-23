@@ -31,14 +31,14 @@ $currentPage = 1;
     </header>
 
     <div class="games-container">
-        <?php foreach ($games as $game): ?>
+        <?php foreach ($games as $index => $game): ?>
             <div class="game-card">
                 <img src="<?php echo $game[0]; ?>" alt="<?php echo $game[1]; ?>">
                 <h3><?php echo $game[1]; ?></h3>
                 <p><?php echo $game[2]; ?></p>
                 <div class="product-actions">
-                    <button class="add-to-cart">Ajouter au Panier</button>
-                    <button class="view-article">Voir l'Article</button>
+                <button class="add-to-cart">Ajouter au Panier</button>
+                <button class="view-article" onclick="location.href='jeu_detail.php?id=<?php echo $index; ?>'">Voir l'Article</button>
                 </div>
             </div>
         <?php endforeach; ?>

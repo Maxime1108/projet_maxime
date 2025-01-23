@@ -30,19 +30,19 @@ $currentPage = 2;
         </div>
     </header>
 
-    <div class="games-container">
-        <?php foreach ($games as $game): ?>
-            <div class="game-card">
-                <img src="<?php echo $game[0]; ?>" alt="<?php echo $game[1]; ?>">
-                <h3><?php echo $game[1]; ?></h3>
-                <p><?php echo $game[2]; ?></p>
-                <div class="product-actions">
-                    <button class="add-to-cart">Ajouter au Panier</button>
-                    <button class="view-article">Voir l'Article</button>
-                </div>
+<div class="games-container">
+    <?php foreach ($games as $index => $game): ?>
+        <div class="game-card">
+            <img src="<?php echo $game[0]; ?>" alt="<?php echo $game[1]; ?>">
+            <h3><?php echo $game[1]; ?></h3>
+            <p><?php echo $game[2]; ?></p>
+            <div class="product-actions">
+                <button class="add-to-cart">Ajouter au Panier</button>
+                <button class="view-article" onclick="location.href='jeu_detail_page_2.php?id=<?php echo $index; ?>'">Voir l'Article</button>
             </div>
-        <?php endforeach; ?>
-    </div>
+        </div>
+    <?php endforeach; ?>
+</div>
 
     <div class="pagination">
         <button onclick="location.href='jeux_video_page.html.php'">1</button>
