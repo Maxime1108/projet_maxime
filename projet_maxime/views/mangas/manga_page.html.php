@@ -39,8 +39,11 @@ $mangas = [
             <p><?php echo $manga[2]; ?></p>
             <div class="buttons">
                 <button class="add-to-cart">Ajouter au Panier</button>
-                <button class="view-article">Voir l'Article</button>
+                <button class="view-article" onclick="location.href='manga_detail.php?id=<?php echo $index; ?>'">Voir l'Article</button>
             </div>
         </div>
     <?php endforeach; ?>
 </div>
+</body>
+
+</html>
