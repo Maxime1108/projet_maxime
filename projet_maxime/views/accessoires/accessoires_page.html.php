@@ -25,9 +25,6 @@ $currentPage = 1;
 
     <header>
         <h1>ACCESSOIRES</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Recherche">
-        </div>
     </header>
 
     <div class="accessories-container">
