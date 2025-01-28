@@ -1,4 +1,4 @@
-/* Styles généraux */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #ffe6e6;
@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-/* En-tête */
+
 header {
   background-color: #ffd9d9;
   padding: 10px 20px;
@@ -27,7 +27,6 @@ header {
   font-size: 16px;
 }
 
-/* Conteneur du formulaire */
 .form-container {
   background-color: #fff;
   max-width: 400px;
@@ -69,8 +68,9 @@ header {
 }
 
 footer {
+  margin-top: 200px;
   text-align: center;
-  padding: 20px;
+  padding: 61px;
   background-color: #ffd9d9;
   border-top: 2px solid #ffb3b3;
 }

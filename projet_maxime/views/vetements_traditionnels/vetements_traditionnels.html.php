@@ -24,9 +24,6 @@ $currentPage = 1;
 <body>
     <header>
         <h1>VÊTEMENTS TRADITIONNELS</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Recherche">
-        </div>
     </header>
 
     <div class="clothes-container">

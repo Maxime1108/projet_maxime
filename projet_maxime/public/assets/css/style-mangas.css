@@ -20,27 +20,6 @@ header h1 {
   letter-spacing: 2px;
 }
 
-.search-bar {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.search-bar input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #6a1e77;
-  border-radius: 20px;
-}
-
-.search-bar button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
 .manga-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

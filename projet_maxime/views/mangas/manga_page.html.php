@@ -23,9 +23,6 @@ $mangas = [
 <body>
     <header>
         <h1>MANGAS</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Recherche">
-        </div>
     </header>
 
 <div class="manga-container">

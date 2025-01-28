@@ -20,25 +20,6 @@ header h1 {
   margin: 0;
 }
 
-.search-bar {
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
-}
-
-.search-bar input {
-  width: 300px;
-  padding: 10px;
-  border: 2px solid #d80073;
-  border-radius: 25px;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.search-bar input:focus {
-  border-color: #a50056;
-}
-
 .accessories-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
