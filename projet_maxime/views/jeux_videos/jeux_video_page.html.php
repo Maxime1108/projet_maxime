@@ -8,7 +8,14 @@ $games = [
     ["../../public/assets/img/darksouls3.jpg", "Dark Souls III", "59,99€"],
     ["../../public/assets/img/re2.jpg", "Resident Evil 2", "39,99€"],
 ];
+
 $currentPage = 1;
+
+$search = $_GET['search'] ?? '';
+
+$filteredGames = array_filter($games, function ($game) use ($search) {
+    return stripos($game[1], $search) !== false; 
+});
 ?>
 
 <!DOCTYPE html>
@@ -25,23 +32,30 @@ $currentPage = 1;
 
     <header>
         <h1>JEUX VIDÉO</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Recherche">
-        </div>
+        <form method="GET" action="">
+            <div class="search-bar">
+                <input type="text" name="search" placeholder="Rechercher un jeu..." value="<?php echo htmlspecialchars($search); ?>">
+                <button type="submit">Rechercher</button>
+            </div>
+        </form>
     </header>
 
     <div class="games-container">
-        <?php foreach ($games as $index => $game): ?>
-            <div class="game-card">
-                <img src="<?php echo $game[0]; ?>" alt="<?php echo $game[1]; ?>">
-                <h3><?php echo $game[1]; ?></h3>
-                <p><?php echo $game[2]; ?></p>
-                <div class="product-actions">
-                <button class="add-to-cart">Ajouter au Panier</button>
-                <button class="view-article" onclick="location.href='jeu_detail.php?id=<?php echo $index; ?>'">Voir l'Article</button>
+        <?php if (empty($filteredGames)): ?>
+            <p>Aucun jeu trouvé.</p>
+        <?php else: ?>
+            <?php foreach ($filteredGames as $index => $game): ?>
+                <div class="game-card">
+                    <img src="<?php echo $game[0]; ?>" alt="<?php echo $game[1]; ?>">
+                    <h3><?php echo $game[1]; ?></h3>
+                    <p><?php echo $game[2]; ?></p>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Ajouter au Panier</button>
+                        <button class="view-article" onclick="location.href='jeu_detail.php?id=<?php echo $index; ?>'">Voir l'Article</button>
+                    </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 
     <div class="pagination">
